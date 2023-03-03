@@ -1,0 +1,6 @@
+docker run -d --name auth-api-pgdb \
+-p 5432:5432 \
+-e POSTGRES_PASSWORD=********** \
+-e PGDATA=/var/lib/postgresql/data/pgdata \
+-v /home/djbk/Code/DockerVolume/pg-db:/var/lib/postgresql/data \
+postgres:15-alpine
